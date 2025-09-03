@@ -1,0 +1,127 @@
+@use "colors.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font: {
+        family: "Poppins", sans-serif;
+        size: 15px;
+    }
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: safe center;
+    justify-content: safe center;
+}
+
+header {
+    text-align: center;
+    max-width: 28em;
+}
+
+header {
+    h1 {
+        font-weight: 200;
+    }
+
+    h2 {
+        font: {
+            size: 1.98em;
+            weight: 700;
+        }
+    }
+
+    p {
+        font-size: 0.8em;
+        margin-top: 0.8em;
+        margin-bottom: 2em;
+    }
+}
+
+h1,
+h2,
+h3 {
+    color: colors.$Grey-500;
+}
+
+p {
+    color: colors.$Grey-400;
+}
+
+.cards {
+    display: flex;
+    // flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    .card:nth-child(1) {
+        border-top: 5px solid colors.$Cyan;
+    }
+
+    .card:nth-child(3) {
+        border-top: 5px solid colors.$Blue;
+    }
+}
+
+.card {
+    max-width: 22em;
+    margin: 2em 1em;
+    padding: 2em;
+    border-radius: 0.4em;
+    box-shadow: 0 4px 16px 0 hsl(212, 6%, 44%, 0.3), 0 6px 32px 0 hsl(212, 6%, 44%, 0.19);
+
+    p {
+        font-size: 0.8em;
+    }
+
+    img {
+        display: block;
+        margin: 1.2em 0 0.9em auto;
+    }
+}
+
+.nested {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    .card {
+        margin: 1.2em;
+    }
+
+    .card:nth-child(1) {
+        border-top: 5px solid colors.$Red;
+    }
+
+    .card:nth-child(2) {
+        border-top: 5px solid colors.$Orange;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    header {
+        margin: 3em 3em 0 3em;
+
+        h1, h2 {
+            font: {
+                size: 1.8em;
+            }
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-top: 0.8em;
+            margin-bottom: 2em;
+        }
+    }
+}
