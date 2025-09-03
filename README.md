@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Geeta16-97/four-card-feature-section]
-- Live Site URL: [https://github.com/Geeta16-97/four-card-feature-section/]
+- Live Site URL: [https://geeta16-97.github.io/four-card-feature-section/]
 
 ## My process
 
