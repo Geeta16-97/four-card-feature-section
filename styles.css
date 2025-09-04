@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 0.9em;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,6 @@ header {
   text-align: center;
   max-width: 28em;
 }
-
 header h1 {
   font-weight: 200;
 }
@@ -33,9 +32,9 @@ header p {
   margin-bottom: 2em;
 }
 
-h1,
+h3,
 h2,
-h3 {
+h1 {
   color: hsl(234, 12%, 34%);
 }
 
@@ -85,7 +84,7 @@ p {
   border-top: 5px solid hsl(34, 97%, 64%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
   .cards {
     flex-direction: column;
   }
